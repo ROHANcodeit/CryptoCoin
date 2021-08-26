@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CryptoCoin" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8WH-hS-mv6">
+                                <rect key="frame" x="47" y="627.5" width="320" height="234.5"/>
+                                <color key="tintColor" name="AccentColor"/>
+                            </pickerView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="84" translatesAutoresizingMaskIntoConstraints="NO" id="caw-PA-hcm">
+                                <rect key="frame" x="0.0" y="74" width="414" height="545.5"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="xqO-nV-NNX">
+                                        <rect key="frame" x="29.5" y="0.0" width="355" height="39"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="..." textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bAI-X0-aSU">
+                                                <rect key="frame" x="0.0" y="0.0" width="277.5" height="39"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="39" id="Jkg-eR-Se8"/>
+                                                    <constraint firstAttribute="width" constant="277.5" id="Uv6-zB-mR3"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="40"/>
+                                                <color key="textColor" systemColor="systemYellowColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="INR" textAlignment="natural" lineBreakMode="tailTruncation" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="quC-1z-RMK">
+                                                <rect key="frame" x="287.5" y="0.0" width="67.5" height="39"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="67.5" id="e0c-jP-Oxo"/>
+                                                    <constraint firstAttribute="height" constant="39" id="pnz-Al-BWI"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="30"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="0y4-BJ-144">
+                                        <rect key="frame" x="30.5" y="123" width="353" height="422.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CRYPTO COIN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4EZ-dT-oHa">
+                                                <rect key="frame" x="14" y="0.0" width="325" height="71.5"/>
+                                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="55"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="kfS-nm-f7u">
+                                                <rect key="frame" x="6" y="81.5" width="341" height="341"/>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="xqO-nV-NNX" firstAttribute="leftMargin" secondItem="0y4-BJ-144" secondAttribute="left" constant="-1" id="NVE-5r-5XT"/>
+                                    <constraint firstItem="0y4-BJ-144" firstAttribute="trailing" secondItem="xqO-nV-NNX" secondAttribute="trailing" constant="-1" id="v1l-1q-10u"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.50980395079999996" green="0.87058818339999999" blue="0.89411771299999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="caw-PA-hcm" secondAttribute="trailing" id="EkN-wI-Q7o"/>
+                            <constraint firstItem="8WH-hS-mv6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="47" id="FR7-mF-ctC"/>
+                            <constraint firstItem="caw-PA-hcm" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="FzQ-eE-BRN"/>
+                            <constraint firstItem="8WH-hS-mv6" firstAttribute="top" secondItem="caw-PA-hcm" secondAttribute="bottom" constant="8" id="IXM-Dx-aaM"/>
+                            <constraint firstItem="caw-PA-hcm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="TVI-wm-Fyq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="8WH-hS-mv6" secondAttribute="bottom" id="VcS-gg-n4F"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8WH-hS-mv6" secondAttribute="trailing" constant="47" id="e5N-pT-Jyl"/>
+                            <constraint firstItem="8WH-hS-mv6" firstAttribute="top" secondItem="caw-PA-hcm" secondAttribute="bottom" constant="8" id="hg2-Zl-fYM"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bitcoinLabel" destination="bAI-X0-aSU" id="Tk7-Tt-Bpr"/>
+                        <outlet property="currencyLabel" destination="quC-1z-RMK" id="fSV-8Z-68J"/>
+                        <outlet property="currencyPicker" destination="8WH-hS-mv6" id="vAw-1C-jLH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="44.927536231884062" y="88.392857142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="logo" width="341" height="341"/>
+        <namedColor name="AccentColor">
+            <color red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
